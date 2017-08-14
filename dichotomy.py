@@ -13,7 +13,7 @@ def func(args):
         elif number < args[middle]:
             end = middle
         else:
-            return "The index value is %s, and the count number is %s." % (middle, count)
+            return "The index value is %s, and the statistics count is %s." % (middle, count)
 
 arr = [1, 2, 4, 5, 6, 32, 43, 545, 657, 3443, 4355, 32674, 99999]
 print func(arr)

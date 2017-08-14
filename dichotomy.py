@@ -1,24 +1,24 @@
 #!/usr/bin/env python  
-# 二分法思想
-number = [1, 2, 3, 5, 7 ,9, 12, 23, 34, 56, 78, 98, 102, 344, 800] 
-# number = range(1000)
-start = 0 
-end = len(number) - 1 
-res = 34  
-count = 0
-while True：  
-    count += 1
-    middle = (start + end) / 2 
-    if res > middle: 
-        start = middle 
-    elif res < middle: 
-        end = middle 
-    else: 
-        print middle 
-print number[middle], count 
+# 二分法
+def func(args):
+    start = 0
+    end = len(args) - 1
+    number = 657
+    count = 0
+    while True:
+        count += 1
+        middle = (start + end) / 2
+        if number > args[middle]:
+            start = middle
+        elif number < args[middle]:
+            end = middle
+        else:
+            return "The index value is %s, and the count number is %s." % (middle, count)
+
+arr = [1, 2, 4, 5, 6, 32, 43, 545, 657, 3443, 4355, 32674, 99999]
+print func(arr)
 
 """ 
 执行结果： 
-8
-34 3
+The index value is 8, and the count number is 4.
 """

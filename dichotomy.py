@@ -20,5 +20,5 @@ print func(arr)
 
 """ 
 执行结果： 
-The index value is 8, and the count number is 4.
+The index value is 8, and the statistics count is 4.
 """
